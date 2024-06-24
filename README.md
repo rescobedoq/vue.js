@@ -145,6 +145,7 @@ vim index.html
 mkdir js
 vim js/script-01.js
 ```
+> index.html
 ```html
 <!DOCTYPE html>
 <html>
@@ -176,6 +177,7 @@ setup() {
 
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
+- https://vuejs.org/guide/introduction
 - https://vuejs.org/examples
 - https://play.vuejs.org/
 - https://codepen.io/vuejs-examples
