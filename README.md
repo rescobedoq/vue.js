@@ -23,6 +23,7 @@ v20.13.0
 npm --version
 10.5.2
 ```
+
 ### Crear un nuevo proyecto Vue.js
 ```bash
 npm create vue@latest
@@ -57,6 +58,54 @@ npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
 npm notice Run npm install -g npm@10.8.1 to update!
 npm notice
 ```
+
+### Estructura inicial de un proyecto Vue.js
+´´´bash
+[ROOT-PROJECT]
+│   .eslintrc.cjs
+│   .gitignore
+│   index.html
+│   jsconfig.json
+│   package.json
+│   README.md
+│   vite.config.js
+│
+├───.vscode
+│       extensions.json
+│       settings.json
+│
+├───public
+│       favicon.ico
+│
+└───src
+    │   App.vue
+    │   main.js
+    │
+    ├───assets
+    │       base.css
+    │       logo.svg
+    │       main.css
+    │
+    └───components
+        │   HelloWorld.vue
+        │   TheWelcome.vue
+        │   WelcomeItem.vue
+        │
+        └───icons
+                IconCommunity.vue
+                IconDocumentation.vue
+                IconEcosystem.vue
+                IconSupport.vue
+                IconTooling.vue
+´´´
+
+### Instalar dependencias ()
+´´´bash
+cd vue-project-01
+npm install
+´´´
+
+### 
 
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
