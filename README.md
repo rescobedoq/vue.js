@@ -15,21 +15,20 @@
 ## Inicio rápido
 
 > ### Instalar Node.js >= 18.3
-> - sudo apt-get install nodejs
-> - sudo apt-get install npm
+> - **sudo apt-get install nodejs**
+> - **sudo apt-get install npm**
 > - node --version
 > - v20.13.0
 > - npm --version
 > - 10.5.2
 
 > ### Crear un nuevo proyecto Vue.js
-> - npm create vue@latest
-
-
+> - **npm create vue@latest**
+>
 > - Ok to proceed? (y) y
-
+>
 > - Vue.js - The Progressive JavaScript Framework
-
+>
 > - √ Project name: ... vue-project-01
 > - √ Add TypeScript? ... No / Yes
 > - √ Add JSX Support? ... No / Yes
@@ -40,11 +39,11 @@
 > - √ Add ESLint for code quality? ... No / Yes
 > - √ Add Prettier for code formatting? ... No / Yes
 > - √ Add Vue DevTools 7 extension for debugging? (experimental) ... No / Yes
-
+>
 > - Scaffolding project in C:\Development\vue.js\vue-project-01...
-
+>
 > - Done. Now run:
-
+>
 > -   cd vue-project-01
 > -   npm install
 > -   npm run dev
