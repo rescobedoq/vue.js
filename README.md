@@ -160,6 +160,7 @@ vim js/script-01.js
 </body>
 </html>
 ```
+> js/script-01.js
 ```js
 const { createApp, ref } = Vue
 
