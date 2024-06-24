@@ -12,15 +12,15 @@
 - Proporciona un Routing mapeando componentes de acuerdo a la ruta a la que pertenecen.
 - Su sitio oficial es https://vuejs.org/
 
-# Inicio rápido
+## Inicio rápido
 
-> #### Instalar Node.js >= 18.3
+> ### Instalar Node.js >= 18.3
 > - sudo apt-get install nodejs
 > - sudo apt-get install npm
 > - node --version
 > - v20.13.0
 
-> #### Crear un nuevo proyecto Vue.js
+> ### Crear un nuevo proyecto Vue.js
 > - npm create vue@latest
 
 
