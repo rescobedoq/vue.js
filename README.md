@@ -60,7 +60,7 @@ npm notice
 ```
 
 ### Estructura inicial de un proyecto Vue.js
-´´´bash
+```bash
 [ROOT-PROJECT]
 │   .eslintrc.cjs
 │   .gitignore
@@ -97,13 +97,13 @@ npm notice
                 IconEcosystem.vue
                 IconSupport.vue
                 IconTooling.vue
-´´´
+```
 
 ### Instalar dependencias ()
-´´´bash
+```bash
 cd vue-project-01
 npm install
-´´´
+```
 
 ### 
 
