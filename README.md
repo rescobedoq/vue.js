@@ -99,13 +99,16 @@ npm notice
                 IconTooling.vue
 ```
 
-### Instalar dependencias ()
+### Instalar dependencias (package.json)
 ```bash
 cd vue-project-01
 npm install
 ```
 
-### 
+### Iniciar el servidor (Development)
+```bash
+npm run dev
+```
 
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
