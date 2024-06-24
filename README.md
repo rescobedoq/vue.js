@@ -15,12 +15,14 @@
 ## Inicio rápido
 
 > ### Instalar Node.js >= 18.3
-> - **sudo apt-get install nodejs**
-> - **sudo apt-get install npm**
-> - node --version
-> - v20.13.0
-> - npm --version
-> - 10.5.2
+```bash
+sudo apt-get install nodejs
+sudo apt-get install npm
+node --version
+v20.13.0
+npm --version
+10.5.2
+```
 
 > ### Crear un nuevo proyecto Vue.js
 > - **npm create vue@latest**
