@@ -47,14 +47,18 @@
 > -   cd vue-project-01
 > -   npm install
 > -   npm run dev
-
+>
 > - npm notice
 > - npm notice New minor version of npm available! 10.5.2 -> 10.8.1
 > - npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
 > - npm notice Run npm install -g npm@10.8.1 to update!
 > - npm notice
 
-
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
 # Referencias
 - https://vuejs.org/guide/quick-start.html
