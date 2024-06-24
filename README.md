@@ -25,6 +25,9 @@ npm --version
 ```
 ### Crear un nuevo proyecto Vue.js
 ```bash
+npm create vue@latest
+```
+```bash
 Ok to proceed? (y) y
 
 Vue.js - The Progressive JavaScript Framework
