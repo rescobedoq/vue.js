@@ -14,7 +14,7 @@
 
 ## Inicio rápido
 
-> ### Instalar Node.js >= 18.3
+### Instalar Node.js >= 18.3
 ```bash
 sudo apt-get install nodejs
 sudo apt-get install npm
@@ -23,46 +23,39 @@ v20.13.0
 npm --version
 10.5.2
 ```
+### Crear un nuevo proyecto Vue.js
+```bash
+Ok to proceed? (y) y
 
-> ### Crear un nuevo proyecto Vue.js
-> - **npm create vue@latest**
->
-> - Ok to proceed? (y) y
->
-> - Vue.js - The Progressive JavaScript Framework
->
-> - √ Project name: ... vue-project-01
-> - √ Add TypeScript? ... No / Yes
-> - √ Add JSX Support? ... No / Yes
-> - √ Add Vue Router for Single Page Application development? ... No / Yes
-> - √ Add Pinia for state management? ... No / Yes
-> - √ Add Vitest for Unit Testing? ... No / Yes
-> - √ Add an End-to-End Testing Solution? » No
-> - √ Add ESLint for code quality? ... No / Yes
-> - √ Add Prettier for code formatting? ... No / Yes
-> - √ Add Vue DevTools 7 extension for debugging? (experimental) ... No / Yes
->
-> - Scaffolding project in C:\Development\vue.js\vue-project-01...
->
-> - Done. Now run:
->
-> -   cd vue-project-01
-> -   npm install
-> -   npm run dev
->
-> - npm notice
-> - npm notice New minor version of npm available! 10.5.2 -> 10.8.1
-> - npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
-> - npm notice Run npm install -g npm@10.8.1 to update!
-> - npm notice
+Vue.js - The Progressive JavaScript Framework
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+√ Project name: ... vue-project-01
+√ Add TypeScript? ... No / Yes
+√ Add JSX Support? ... No / Yes
+√ Add Vue Router for Single Page Application development? ... No / Yes
+√ Add Pinia for state management? ... No / Yes
+√ Add Vitest for Unit Testing? ... No / Yes
+√ Add an End-to-End Testing Solution? » No
+√ Add ESLint for code quality? ... No / Yes
+√ Add Prettier for code formatting? ... No / Yes
+√ Add Vue DevTools 7 extension for debugging? (experimental) ... No / Yes
+
+Scaffolding project in C:\Development\vue.js\vue-project-01...
+
+Done. Now run:
+
+  cd vue-project-01
+  npm install
+  npm run dev
+
+npm notice
+npm notice New minor version of npm available! 10.5.2 -> 10.8.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
+npm notice Run npm install -g npm@10.8.1 to update!
+npm notice
 ```
 
-# Referencias
+## Referencias
 - https://vuejs.org/guide/quick-start.html
 - https://vuejs.org/examples
 - https://play.vuejs.org/
