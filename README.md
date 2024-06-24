@@ -16,8 +16,9 @@
 
 ## Instalación
 - Instale Node.js >= 18.3.
-> sudo apt-get install nodejs
-> sudo apt-get install npm
+    > sudo apt-get install nodejs
+    >
+    > sudo apt-get install npm
 
 
 # Referencias
