@@ -137,6 +137,8 @@ npm run dev
   ➜  press h + enter to show help
 ```
 
+![vue-project-01](/images/vue-project-01.jpg)
+
 ### Crear otro proyecto Vue directamente desde una CDN (Content delivery network)
 ```bash
 mkdir vue-project-02
@@ -176,14 +178,15 @@ setup() {
 ```
 
 ## Actividades
-1. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
-2. Realice el tutorial de Vue.js en https://vuejs.org/tutorial/
+1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice el tutorial de Vue.js en https://vuejs.org/tutorial/
+2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
 
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
 - https://vuejs.org/guide/introduction
 - https://vuejs.org/examples
 - https://play.vuejs.org/
+- https://codepen.io/pen/editor/vue
 - https://codepen.io/vuejs-examples
 - https://www.w3schools.com/vue/
 - https://www.w3schools.com/whatis/whatis_vue.asp
