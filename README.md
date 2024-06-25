@@ -200,7 +200,7 @@ No olvide de cambiar a la versión Vue.js 3.
 ![vue.js-example-style-options-composition](/images/vue.js-example-style-options-composition.png)
 
 ## Referencias
-- https://vuejs.org/guide/quick-start.html
+- Inicio rápido - https://vuejs.org/guide/quick-start.html
 - https://vuejs.org/guide/introduction
 - https://vuejs.org/examples
 - https://play.vuejs.org/
