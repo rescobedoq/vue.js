@@ -143,6 +143,7 @@ vim index.html
 ```
 
 > index.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -163,9 +164,10 @@ mkdir js
 ```
 ```bash
 vim js/script-01.js
-``
+```
 
 > js/script-01.js
+
 ```js
 const { createApp, ref } = Vue
 
