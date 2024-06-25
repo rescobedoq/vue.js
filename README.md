@@ -137,7 +137,7 @@ npm run dev
   ➜  press h + enter to show help
 ```
 
-![vue-project-01](/images/vue-project-01.jpg)
+![vue-project-01](/images/vue-project-01.png)
 
 ### Crear otro proyecto Vue directamente desde una CDN (Content delivery network)
 ```bash
