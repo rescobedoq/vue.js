@@ -365,7 +365,39 @@ export default{
 
 ![vue-project-03_03](/images/vue-project-03_03.png)
 
+### La directiva **'v-model'**
+- Se utiliza para crear un enlace bidireccional entre un input y una propiedad de datos. Es como un enlace de dos vías. 
 
+> src/componentes/MyComponent.vue
+
+```js
+<template>
+	<div id="my-component">
+		<h1 v-if="isVisible">{{ message }}</h1>
+        <button v-on:click="toggleVisibility">Toggle Visibility</button>
+        <input v-model="message">
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!',
+            isVisible: true
+		}
+	},
+    methods:{
+        toggleVisibility(){
+            this.isVisible = !this.isVisible;
+        }
+    }
+}
+</script>
+```
+
+![vue-project-03_04](/images/vue-project-03_04.png)
 
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
