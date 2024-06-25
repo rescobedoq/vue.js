@@ -1,4 +1,7 @@
 # Vue.js
+
+![vue.js-logo](/images/vue.js-logo.png)
+
 - Es un marco de trabajo (framework) en JavaScript.
 - Es Software de código abierto (freesoftware) bajo la licencia MIT.
 - Sirve para la construcción de Interfaces de Usuario.
@@ -191,6 +194,10 @@ No olvide de cambiar a la versión Vue.js 3.
 ![codepen-js-vue3](/images/codepen-js-vue3.png)
 
 2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
+
+![vue.js-example-style-options-api](/images/vue.js-example-style-options-api.png)
+
+![vue.js-example-style-options-composition](/images/vue.js-example-style-options-composition.png)
 
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
