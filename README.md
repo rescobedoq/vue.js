@@ -140,7 +140,7 @@ cd vue-project-02
 ```
 ```bash
 vim index.html
-``
+```
 
 > index.html
 ```html
