@@ -194,6 +194,115 @@ vue --version
 ```bash
 @vue/cli 5.0.8
 ```
+```bash
+vue create vue-project-03
+```
+```bash
+Vue CLI v5.0.8
+? Please pick a preset: Default ([Vue 3] babel, eslint)
+```
+```bash
+cd vue-project-03
+```
+```bash
+npm run serve
+```
+```bash
+  DONE  Compiled successfully in 6715ms 3:23:53 p. m.
+
+  App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.1.18:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+```
+
+![vue-project-03](/images/vue-project-03.png)
+
+```bash
+[ROOT-PROJECT]
+|-- README.md
+|-- babel.config.js
+|-- jsconfig.json
+|-- node_modules
+|-- package-lock.json
+|-- package.json
+|-- public
+|   |-- favicon.ico
+|   `-- index.html
+|-- src
+|   |-- App.vue
+|   |-- assets
+|   |-- components
+|   `-- main.js
+`-- vue.config.js
+```
+
+## Componentes Vue
+- Un componente Vue es una instancia reutilizable con un nombre que se puede usar como un elemento personalizado en el HTML. Los componentes pueden tener su propio estado, métodos, calculos, estilos, etc. Se le puede considerar un bloque de contrucción dentro de la aplicación.
+
+````bash
+vim src/components/MyComponent.vue
+```
+
+> src/components/MyComponent.vue
+
+````js
+<template>
+	<div id="my-component">
+		<h1>{{ message }}</h1>
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!'
+		}
+	}
+}
+</script>
+```
+````bash
+vim src/App.vue
+```
+
+> src/App.vue
+
+````js
+<template>
+  <img alt="Vue logo" src="./assets/logo.png">
+<MyComponent />
+</template>
+
+<script>
+import MyComponent from './components/MyComponent.vue'
+
+export default {
+  name: 'App',
+  components: {
+    MyComponent
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+```
+![vue-project-03_02](/images/vue-project-03_02.png)
+
+
 
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
