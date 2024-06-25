@@ -175,6 +175,10 @@ setup() {
 }).mount('#app')
 ```
 
+## Actividades
+1. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
+2. Realice el tutorial de Vue.js en https://vuejs.org/tutorial/
+
 ## Referencias
 - https://vuejs.org/guide/quick-start.html
 - https://vuejs.org/guide/introduction
