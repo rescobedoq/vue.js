@@ -20,10 +20,20 @@
 ### Instalar Node.js >= 18.3
 ```bash
 sudo apt-get install nodejs
+```
+```bash
 sudo apt-get install npm
+```
+```bash
 node --version
+```
+```bash
 v20.13.0
+```
+```bash
 npm --version
+```
+```bash
 10.5.2
 ```
 
@@ -37,15 +47,15 @@ Ok to proceed? (y) y
 Vue.js - The Progressive JavaScript Framework
 
 √ Project name: ... vue-project-01
-√ Add TypeScript? ... No / Yes
-√ Add JSX Support? ... No / Yes
-√ Add Vue Router for Single Page Application development? ... No / Yes
-√ Add Pinia for state management? ... No / Yes
-√ Add Vitest for Unit Testing? ... No / Yes
+√ Add TypeScript? ... No
+√ Add JSX Support? ... No
+√ Add Vue Router for Single Page Application development? ... No 
+√ Add Pinia for state management? ... No
+√ Add Vitest for Unit Testing? ... No
 √ Add an End-to-End Testing Solution? » No
-√ Add ESLint for code quality? ... No / Yes
-√ Add Prettier for code formatting? ... No / Yes
-√ Add Vue DevTools 7 extension for debugging? (experimental) ... No / Yes
+√ Add ESLint for code quality? ... Yes
+√ Add Prettier for code formatting? ... No
+√ Add Vue DevTools 7 extension for debugging? (experimental) ... No
 
 Scaffolding project in C:\Development\vue.js\vue-project-01...
 
@@ -105,22 +115,9 @@ npm notice
 ### Instalar dependencias (package.json)
 ```bash
 cd vue-project-01
-npm install
 ```
-
 ```bash
-npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
-npm WARN deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
-npm WARN deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
-npm WARN deprecated @humanwhocodes/config-array@0.11.14: Use @eslint/config-array instead
-
-added 136 packages, and audited 137 packages in 18s
-
-29 packages are looking for funding
-  run `npm fund` for details
-
-found 0 vulnerabilities
+npm install
 ```
 
 ### Iniciar el servidor (Development)
@@ -129,27 +126,22 @@ npm run dev
 ```
 
 ```bash
-> vue-project-01@0.0.0 dev
-> vite
-
-
-  VITE v5.3.1  ready in 543 ms
-
   ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
 ```
 
 ![vue-project-01](/images/vue-project-01.png)
 
-### Crear otro proyecto Vue directamente desde una CDN (Content delivery network)
+### Proyecto Vue.js directamente desde una CDN (Content delivery network)
 ```bash
 mkdir vue-project-02
-cd vue-project-02
-vim index.html
-mkdir js
-vim js/script-01.js
 ```
+```bash
+cd vue-project-02
+```
+```bash
+vim index.html
+``
+
 > index.html
 ```html
 <!DOCTYPE html>
@@ -166,6 +158,13 @@ vim js/script-01.js
 </body>
 </html>
 ```
+```bash
+mkdir js
+```
+```bash
+vim js/script-01.js
+``
+
 > js/script-01.js
 ```js
 const { createApp, ref } = Vue
@@ -181,6 +180,18 @@ setup() {
 ```
 
 ![vue-project-02](/images/vue-project-02.png)
+
+### Proyecto creado desde el CLI de Vue.js
+
+```bash
+npm install -g @vue/cli
+```
+```bash
+vue --version
+```
+```bash
+@vue/cli 5.0.8
+```
 
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
@@ -210,6 +221,6 @@ Utilice el estandar **vue.js-01, vue.js-02, etc.**
 - [Vue Tutorial](https://www.w3schools.com/vue/)
 - [What is Vue.js?](https://www.w3schools.com/whatis/whatis_vue.asp)
 - [Tutorial de VueJS: Aprende creando un programa sencillo](https://codigonaranja.com/tutorial-de-vuejs)
-- [Vue Mastery](https://www.vuemastery.com/courses/)
+- [Video tutorials on VueMastery](https://www.vuemastery.com/courses/)
 - [Official Vue.js Certification](https://certificates.dev/vuejs)
 - [Free Weekend](https://certificates.dev/vuejs/free-weekend)
