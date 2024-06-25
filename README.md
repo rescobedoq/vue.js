@@ -185,7 +185,9 @@ setup() {
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice el tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
 
 ![vue.js-01](/images/vue.js-01.png)
+
 No olvide de cambiar a la versión Vue.js 3.
+
 ![codepen-js-vue3](/images/codepen-js-vue3.png)
 
 2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
