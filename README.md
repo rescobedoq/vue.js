@@ -242,13 +242,13 @@ npm run serve
 ## Componentes Vue
 - Un componente Vue es una instancia reutilizable con un nombre que se puede usar como un elemento personalizado en el HTML. Los componentes pueden tener su propio estado, métodos, calculos, estilos, etc. Se le puede considerar un bloque de contrucción dentro de la aplicación.
 
-````bash
+```bash
 vim src/components/MyComponent.vue
 ```
 
 > src/components/MyComponent.vue
 
-````js
+```js
 <template>
 	<div id="my-component">
 		<h1>{{ message }}</h1>
@@ -266,13 +266,14 @@ export default{
 }
 </script>
 ```
-````bash
+
+```bash
 vim src/App.vue
 ```
 
 > src/App.vue
 
-````js
+```js
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
 <MyComponent />
@@ -300,6 +301,7 @@ export default {
 }
 </style>
 ```
+
 ![vue-project-03_02](/images/vue-project-03_02.png)
 
 
