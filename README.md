@@ -182,10 +182,9 @@ setup() {
 
 ![vue-project-02](/images/vue-project-02.png)
 
-
-
 ## Actividades
-1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice el tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
+1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
+Utilice el estandar **vue.js-01, vue.js-02, etc.**
 
 ![vue.js-01](/images/vue.js-01.png)
 
@@ -194,6 +193,8 @@ No olvide de cambiar a la versión Vue.js 3.
 ![codepen-js-vue3](/images/codepen-js-vue3.png)
 
 2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
+Luego, agregue cada uno de los ejemplos oficiales en https://vuejs.org/examples/ a su CodePen.
+Utilice el estandar **vue.js-01, vue.js-02, etc.**
 
 ![vue.js-example-style-options-api](/images/vue.js-example-style-options-api.png)
 
@@ -201,13 +202,14 @@ No olvide de cambiar a la versión Vue.js 3.
 
 ## Referencias
 - [Inicio rápido](https://vuejs.org/guide/quick-start.html)
-- https://vuejs.org/guide/introduction
-- https://vuejs.org/examples
-- https://play.vuejs.org/
-- https://codepen.io/pen/editor/vue
-- https://codepen.io/vuejs-examples
-- https://www.w3schools.com/vue/
-- https://www.w3schools.com/whatis/whatis_vue.asp
-- https://codigonaranja.com/tutorial-de-vuejs#version-en-video
-- https://www.vuemastery.com/courses/
-- https://certificates.dev/vuejs
+- [Introducción](https://vuejs.org/guide/introduction)
+- [Ejemplos](https://vuejs.org/examples)
+- [Playground](https://play.vuejs.org/)
+- [CodePen Vue.js editor](https://codepen.io/pen/editor/vue)
+- [CodePen Examples](https://codepen.io/vuejs-examples)
+- [Vue Tutorial](https://www.w3schools.com/vue/)
+- [What is Vue.js?](https://www.w3schools.com/whatis/whatis_vue.asp)
+- [Tutorial de VueJS: Aprende creando un programa sencillo](https://codigonaranja.com/tutorial-de-vuejs)
+- [Vue Mastery](https://www.vuemastery.com/courses/)
+- [Official Vue.js Certification](https://certificates.dev/vuejs)
+- [Free Weekend](https://certificates.dev/vuejs/free-weekend)
