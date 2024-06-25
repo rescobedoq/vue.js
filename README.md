@@ -332,6 +332,41 @@ export default{
 
 ![vue-project-03_03](/images/vue-project-03_03.png)
 
+### Métodos
+- Son funciones que puedes definir dentro de tu componente y utilizar en tu plantilla
+
+> src/componentes/MyComponent.vue
+
+```js
+<template>
+	<div id="my-component">
+		<h1 v-if="isVisible">{{ message }}</h1>
+        <button v-on:click="toggleVisibility">Toggle Visibility</button>
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!',
+            isVisible: true
+		}
+	},
+    methods:{
+        toggleVisibility(){
+            this.isVisible = !this.isVisible;
+        }
+    }
+}
+</script>
+```
+
+![vue-project-03_03](/images/vue-project-03_03.png)
+
+
+
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
 Utilice el estandar **vue.js-01, vue.js-02, etc.**

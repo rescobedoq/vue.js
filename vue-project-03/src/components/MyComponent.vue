@@ -1,7 +1,7 @@
 <template>
 	<div id="my-component">
 		<h1 v-if="isVisible">{{ message }}</h1>
-        <button v-on:click="event => isVisible = !isVisible">Toogle Visibility</button>
+        <button v-on:click="toggleVisibility">Toggle Visibility</button>
 	</div>
 </template>
 
@@ -13,6 +13,11 @@ export default{
 			message: 'Hello World with Vue!',
             isVisible: true
 		}
-	}
+	},
+    methods:{
+        toggleVisibility(){
+            this.isVisible = !this.isVisible;
+        }
+    }
 }
 </script>
