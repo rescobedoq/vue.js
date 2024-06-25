@@ -239,7 +239,7 @@ npm run serve
 `-- vue.config.js
 ```
 
-## Componentes Vue
+### Componentes Vue
 - Un componente Vue es una instancia reutilizable con un nombre que se puede usar como un elemento personalizado en el HTML. Los componentes pueden tener su propio estado, métodos, calculos, estilos, etc. Se le puede considerar un bloque de contrucción dentro de la aplicación.
 
 ```bash
@@ -304,7 +304,33 @@ export default {
 
 ![vue-project-03_02](/images/vue-project-03_02.png)
 
+### Directivas
+- Las directivas son atributos especiales con el prefijo **'v'** que se puede aplicar a los elementos del DOM en las plantillas.
 
+> src/componentes/MyComponent.vue
+
+```js
+<template>
+	<div id="my-component">
+		<h1 v-if="isVisible">{{ message }}</h1>
+        <button v-on:click="event => isVisible = !isVisible">Toogle Visibility</button>
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!',
+            isVisible: true
+		}
+	}
+}
+</script>
+```
+
+![vue-project-03_03](/images/vue-project-03_03.png)
 
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
