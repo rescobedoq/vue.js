@@ -399,6 +399,44 @@ export default{
 
 ![vue-project-03_04](/images/vue-project-03_04.png)
 
+### Eventos
+- Son acciones o sucesos que ocurren debido a la interacción del usuario con la aplicación. Como hacer clic en un botón, presionar una tecla, etc.
+- Por ejemplo la directiva **'v-on'**.
+
+> src/componentes/MyComponent.vue
+
+```js
+<template>
+	<div id="my-component">
+		<h1 v-if="isVisible">{{ message }}</h1>
+        <button v-on:click="sayHello">Toggle Visibility</button>
+        <input v-model="message">
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!',
+            isVisible: true
+		}
+	},
+    methods:{
+        toggleVisibility(){
+            this.isVisible = !this.isVisible;
+        },
+        sayHello(){
+            alert('Hello');
+        }
+    }
+}
+</script>
+```
+
+![vue-project-03_05](/images/vue-project-03_05.png)
+
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
 Utilice el estandar **vue.js-01, vue.js-02, etc.**

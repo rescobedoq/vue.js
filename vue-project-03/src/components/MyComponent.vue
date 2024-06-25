@@ -1,7 +1,7 @@
 <template>
 	<div id="my-component">
 		<h1 v-if="isVisible">{{ message }}</h1>
-        <button v-on:click="toggleVisibility">Toggle Visibility</button>
+        <button v-on:click="sayHello">Toggle Visibility</button>
         <input v-model="message">
 	</div>
 </template>
@@ -18,6 +18,9 @@ export default{
     methods:{
         toggleVisibility(){
             this.isVisible = !this.isVisible;
+        },
+        sayHello(){
+            alert('Hello');
         }
     }
 }
