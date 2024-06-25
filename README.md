@@ -1,6 +1,6 @@
 # Vue.js
 
-![vue.js-logo](/images/vue.js-logo.jpg)
+![vue.js-logo](/images/vue.js-logo.png)
 
 - Es un marco de trabajo (framework) en JavaScript.
 - Es Software de código abierto (freesoftware) bajo la licencia MIT.
