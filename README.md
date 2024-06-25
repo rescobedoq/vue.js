@@ -401,7 +401,7 @@ export default{
 
 ### Eventos
 - Son acciones o sucesos que ocurren debido a la interacción del usuario con la aplicación. Como hacer clic en un botón, presionar una tecla, etc.
-- Por ejemplo la directiva **'v-on'**.
+- Por ejemplo el evento **click** de la directiva **'v-on'**.
 
 > src/componentes/MyComponent.vue
 
