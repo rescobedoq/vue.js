@@ -1,8 +1,13 @@
 <template>
 	<div id="my-component">
 		<h1 v-if="isVisible">{{ message }}</h1>
-        <button v-on:click="sayHello">Toggle Visibility</button>
+        <button @click="sayHello">Toggle Visibility</button>
         <input v-model="message">
+
+        <ul>
+            <li v-for="item in list" :key="item.id">{{ item.text }}</li>
+        </ul>
+
 	</div>
 </template>
 
@@ -12,7 +17,13 @@ export default{
 	data(){
 		return{
 			message: 'Hello World with Vue!',
-            isVisible: true
+            isVisible: true,
+            list: [
+                {id:1, text: 'First item'},
+                {id:2, text: 'Second item'},
+                {id:3, text: 'Third item'},
+                {id:4, text: 'Four item'},
+            ]
 		}
 	},
     methods:{

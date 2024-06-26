@@ -439,6 +439,64 @@ export default{
 
 ![vue-project-03_05](/images/vue-project-03_05.png)
 
+- Se puede abreviar en la directiva con el caracter **@**, así:
+
+```js
+<button @click="sayHello">Toggle Visibility</button>
+```
+
+```js
+<button v-on:click="sayHello">Toggle Visibility</button>
+```
+
+### La directiva **'v-for'**
+Permite renderizar una lista de elementos basada en un arreglo.
+
+> src/componentes/MyComponent.vue
+
+```js
+<template>
+	<div id="my-component">
+		<h1 v-if="isVisible">{{ message }}</h1>
+        <button @click="sayHello">Toggle Visibility</button>
+        <input v-model="message">
+
+        <ul>
+            <li v-for="item in list" :key="item.id">{{ item.text }}</li>
+        </ul>
+
+	</div>
+</template>
+
+<script>
+export default{
+	name: 'MyComponent',
+	data(){
+		return{
+			message: 'Hello World with Vue!',
+            isVisible: true,
+            list: [
+                {id:1, text: 'First item'},
+                {id:2, text: 'Second item'},
+                {id:3, text: 'Third item'},
+                {id:4, text: 'Four item'},
+            ]
+		}
+	},
+    methods:{
+        toggleVisibility(){
+            this.isVisible = !this.isVisible;
+        },
+        sayHello(){
+            alert('Hello');
+        }
+    }
+}
+</script>
+```
+
+![vue-project-03_06](/images/vue-project-03_06.png)
+
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
 Utilice el estandar **vue.js-01, vue.js-02, etc.**
@@ -456,6 +514,9 @@ Utilice el estandar **vue.js-01, vue.js-02, etc.**
 ![vue.js-example-style-options-api](/images/vue.js-example-style-options-api.png)
 
 ![vue.js-example-style-options-composition](/images/vue.js-example-style-options-composition.png)
+
+3. Explique tres directivas (de las que no se explicarón en este sitio) y contruya ejemplos para poder comprobarlos funcionalmente.
+
 
 ## Referencias
 - [Inicio rápido](https://vuejs.org/guide/quick-start.html)
