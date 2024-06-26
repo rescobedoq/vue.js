@@ -302,10 +302,12 @@ export default {
 </style>
 ```
 
-![vue-project-03_02](/images/vue-project-03_02.png)
+![directivas-vue](/images/directivas-vue.png)
 
 ### Directivas
 - Las directivas son atributos especiales con el prefijo **'v'** que se puede aplicar a los elementos del DOM en las plantillas.
+
+![vue-project-03_02](/images/vue-project-03_02.png)
 
 > src/componentes/MyComponent.vue
 
