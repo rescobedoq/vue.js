@@ -556,6 +556,38 @@ export default{
 
 ![vue-project-03_06](/images/vue-project-03_07.png)
 
+- **v-bind** y **v-model** pueden ser muy parecidos, porque permiten vicular datos a elementos de la plantilla.
+- **v-bind** es una directiva que se utiliza para vincular una expresión a un propiedad de un elemento del DOM. Cuando cambia el valor de la expresión, Vuej actualizara automáticamente el valor de la propiedad del DOM. Este es un enlace unidireccional, es decir los cambios en el DOM no afectarán a los datos.
+- **v-model** se utiliza para crear enlaces bidireccionales entre los datos y los elementos del formulario. Los datos también se actualizan y viceversa. Podria decirse que **v-model** es una abreviatura para usar **v-bind** y **v-on** juntos.
+
+### Vuex 
+- Si necesitas compartir datos entre varios componentes. Que no estan directamente relacionados.
+- Vues es una biblioteca de Vue.js que proporciona un almacen de datos para tu aplicación.
+
+```bash
+vim src/store.js
+```
+
+> src/store.js
+
+```js
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+    state: {
+        message: 'Hello World with Vuex!'
+    },
+    muttations: {
+        setMessage(state, newMessage){
+            state.message = newMessage;
+        }
+    }
+});
+```
+
 
 
 ## Actividades
