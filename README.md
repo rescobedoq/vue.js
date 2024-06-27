@@ -504,9 +504,9 @@ export default{
 
 ```js
 <template>
-	<div id="my-component">
-		<h1 v-if="isVisible">{{ message }}</h1>
-        <button @click="sayHello">Toggle Visibility</button>
+	<div class="my-component">
+		<h1 v-bind:class="{ highlighted: isHighlighted }">{{ title }}</h1>
+        <button v-on:click="toggleHighlight">Toggle Highlight</button>
         <input v-model="message">
 
         <ul>
@@ -516,12 +516,20 @@ export default{
 	</div>
 </template>
 
+<style>
+.highlighted{
+    color: gold;
+}
+</style>
+
 <script>
 export default{
 	name: 'MyComponent',
 	data(){
 		return{
 			message: 'Hello World with Vue!',
+            title: 'This is the title',
+            isHighlighted: false,
             isVisible: true,
             list: [
                 {id:1, text: 'First item'},
@@ -537,13 +545,18 @@ export default{
         },
         sayHello(){
             alert('Hello');
+        },
+        toggleHighlight(){
+            this.isHighlighted = !this.isHighlighted;
         }
     }
 }
 </script>
 ```
 
-![vue-project-03_06](/images/vue-project-03_06.png)
+![vue-project-03_06](/images/vue-project-03_07.png)
+
+
 
 ## Actividades
 1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
