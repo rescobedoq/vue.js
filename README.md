@@ -1,4 +1,4 @@
-# Vue.js
+# Vue.js - Framework FrontEnd
 
 ![vue.js-logo](/images/vue.js-logo.png)
 
@@ -15,9 +15,12 @@
 - Proporciona un Routing mapeando componentes de acuerdo a la ruta a la que pertenecen.
 - Su sitio oficial es https://vuejs.org/
 
-## Inicio rápido
+## 1. Requerimientos
 
-### Instalar Node.js >= 18.3
+### 1.1 Instalar Node.js >= 18.3
+- Para trabajar con Vue.js se debe tener **nodejs>=18.3** y el gestor de paquetes **npm**.
+- Sin embargo, cuando se exporte Vue.js desde una CDN no es necesario, pero seguramente es poco probable que utilice esta forma.
+
 ```bash
 sudo apt-get install nodejs
 ```
@@ -37,7 +40,13 @@ npm --version
 10.5.2
 ```
 
-### Crear un nuevo proyecto Vue.js
+## 2. Formas de crear un Nuevo Proyecto Vue.js
+- Existen muchas maneras de crear una nueva aplicación Vue.js.
+- Vamos a ver cuatro maneras de hacerlo.
+
+### 2.1. PRIMERA MANERA: Crear un nuevo proyecto Vue.js
+- En este apartado vamos a usar la documentación oficial para crear un nuevo proyecto Vue.js
+
 ```bash
 npm create vue@latest
 ```
@@ -72,9 +81,12 @@ npm notice Run npm install -g npm@10.8.1 to update!
 npm notice
 ```
 
-### Estructura inicial de un proyecto Vue.js
+#### 2.1.1. Estructura inicial del nuevo proyecto Vue.js
+- Vea que en la estructura esta el archivo **package.json** por lo tanto necesitara utilizar **npm** para contruir la carpeta **node_modules** donde estarán todas las dependencias necesarias.
+
 ```bash
 [ROOT-PROJECT]
+.
 │   .eslintrc.cjs
 │   .gitignore
 │   index.html
@@ -83,28 +95,28 @@ npm notice
 │   README.md
 │   vite.config.js
 │
-├───.vscode
+├───.vscode [DIR]
 │       extensions.json
 │       settings.json
 │
-├───public
+├───public [DIR]
 │       favicon.ico
 │
-└───src
+└───src [DIR]
     │   App.vue
     │   main.js
     │
-    ├───assets
+    ├───assets [DIR]
     │       base.css
     │       logo.svg
     │       main.css
     │
-    └───components
+    └───components [DIR]
         │   HelloWorld.vue
         │   TheWelcome.vue
         │   WelcomeItem.vue
         │
-        └───icons
+        └───icons [DIR]
                 IconCommunity.vue
                 IconDocumentation.vue
                 IconEcosystem.vue
@@ -112,7 +124,7 @@ npm notice
                 IconTooling.vue
 ```
 
-### Instalar dependencias (package.json)
+#### 2.1.2. Instalar dependencias (package.json)
 ```bash
 cd vue-project-01
 ```
@@ -120,7 +132,7 @@ cd vue-project-01
 npm install
 ```
 
-### Iniciar el servidor (Development)
+#### 2.1.3. Iniciar el servidor (Development)
 ```bash
 npm run dev
 ```
@@ -131,7 +143,10 @@ npm run dev
 
 ![vue-project-01](/images/vue-project-01.png)
 
-### Proyecto Vue.js directamente desde una CDN (Content delivery network)
+### 2.2. SEGUNDA MANERA: Proyecto Vue.js directamente desde una CDN (Content delivery network)
+- Esta manera es para trabajar importanto el script Vue.js en un archivo HTML y tratandola como una librería externa JavaScript.
+- Es muy poco probable que utilice esta manera.
+
 ```bash
 mkdir vue-project-02
 ```
@@ -181,9 +196,19 @@ setup() {
 }).mount('#app')
 ```
 
+#### 2.3.1. Estructura del proyecto Vue.js
+```bash
+[ROOT-PROJECT]
+.
+├── index.html
+└── js
+    └── script-01.js
+```
+
 ![vue-project-02](/images/vue-project-02.png)
 
-### Proyecto creado desde el CLI de Vue.js
+### 2.3. TERCERA MANERA: Proyecto creado desde el CLI de Vue.js
+- En este apartado se instala el cliente de Vue.js en el Sistema Operativo para utilizar el comando desde una terminal.
 
 ```bash
 npm install -g @vue/cli
@@ -220,26 +245,33 @@ npm run serve
 
 ![vue-project-03](/images/vue-project-03.png)
 
+#### 2.3.1. Estructura inicial del nuevo proyecto Vue.js
 ```bash
 [ROOT-PROJECT]
-|-- README.md
-|-- babel.config.js
-|-- jsconfig.json
-|-- node_modules
-|-- package-lock.json
-|-- package.json
-|-- public
-|   |-- favicon.ico
-|   `-- index.html
-|-- src
-|   |-- App.vue
-|   |-- assets
-|   |-- components
-|   `-- main.js
-`-- vue.config.js
+.
+├── babel.config.js
+├── jsconfig.json
+├── node_modules[DIR]
+├── package.json
+├── package-lock.json
+├── public [DIR]
+│   ├── favicon.ico
+│   └── index.html
+├── README.md
+├── src [DIR]
+│   ├── App.vue
+│   ├── assets
+│   │   └── logo.png
+│   ├── components [DIR]
+│   │   ├── HelloWorld.vue
+│   │   └── MyComponent.vue
+│   └── main.js
+└── vue.config.js
 ```
 
-### Componentes Vue
+## 3. Aprendiendo Vue.js
+
+### 3.1. Componentes Vue
 - Un componente Vue es una instancia reutilizable con un nombre que se puede usar como un elemento personalizado en el HTML. Los componentes pueden tener su propio estado, métodos, calculos, estilos, etc. Se le puede considerar un bloque de contrucción dentro de la aplicación.
 
 ```bash
@@ -304,7 +336,7 @@ export default {
 
 ![vue-project-03_02](/images/vue-project-03_02.png
 
-### Directivas
+### 3.2. Directivas
 - Las directivas son atributos especiales con el prefijo **'v'** que se puede aplicar a los elementos del DOM en las plantillas.
 
 ![directivas-vue](/images/directivas-vue.png)
@@ -334,7 +366,7 @@ export default{
 
 ![vue-project-03_03](/images/vue-project-03_03.png)
 
-### Métodos
+### 3.3. Métodos
 - Son funciones que puedes definir dentro de tu componente y utilizar en tu plantilla
 
 > src/componentes/MyComponent.vue
@@ -367,7 +399,7 @@ export default{
 
 ![vue-project-03_03](/images/vue-project-03_03.png)
 
-### La directiva **'v-model'**
+### 3.4. La directiva **'v-model'**
 - Se utiliza para crear un enlace bidireccional entre un input y una propiedad de datos. Es como un enlace de dos vías. 
 
 > src/componentes/MyComponent.vue
@@ -401,7 +433,7 @@ export default{
 
 ![vue-project-03_04](/images/vue-project-03_04.png)
 
-### Eventos
+### 3.5. Eventos
 - Son acciones o sucesos que ocurren debido a la interacción del usuario con la aplicación. Como hacer clic en un botón, presionar una tecla, etc.
 - Por ejemplo el evento **click** de la directiva **'v-on'**.
 
@@ -449,7 +481,7 @@ export default{
 <button v-on:click="sayHello">Toggle Visibility</button>
 ```
 
-### La directiva **'v-for'**
+### 3.6. La directiva **'v-for'**
 Permite renderizar una lista de elementos basada en un arreglo.
 
 > src/componentes/MyComponent.vue
@@ -497,7 +529,7 @@ export default{
 
 ![vue-project-03_06](/images/vue-project-03_06.png)
 
-### La directiva **'v-bind'**
+### 3.7. La directiva **'v-bind'**
 - Ejemplo: Se puede utilizar para cambiar el color de texto de un título basada en un valor booleano.
 
 > src/componentes/MyComponent.vue
@@ -560,7 +592,7 @@ export default{
 - **v-bind** es una directiva que se utiliza para vincular una expresión a un propiedad de un elemento del DOM. Cuando cambia el valor de la expresión, Vuej actualizara automáticamente el valor de la propiedad del DOM. Este es un enlace unidireccional, es decir los cambios en el DOM no afectarán a los datos.
 - **v-model** se utiliza para crear enlaces bidireccionales entre los datos y los elementos del formulario. Los datos también se actualizan y viceversa. Podria decirse que **v-model** es una abreviatura para usar **v-bind** y **v-on** juntos.
 
-### Vuex 
+### 3.8. Vuex 
 - Si necesitas compartir datos entre varios componentes. Que no estan directamente relacionados.
 - Vues es una biblioteca de Vue.js que proporciona un almacen de datos para tu aplicación.
 
@@ -590,8 +622,8 @@ export default new Vuex.Store({
 
 
 
-## Actividades
-1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
+## 4. Actividades
+4.1. Registrese en CodePen con su cuenta google institucional o su cuenta GitHub asociada a su cuenta institucional y realice lo ejercicios del tutorial de Vue.js en https://vuejs.org/tutorial/. (El editor Vue.js en CodePen es https://codepen.io/pen/editor/vue)
 Utilice el estandar **vue.js-01, vue.js-02, etc.**
 
 ![vue.js-01](/images/vue.js-01.png)
@@ -600,7 +632,7 @@ No olvide de cambiar a la versión Vue.js 3.
 
 ![codepen-js-vue3](/images/codepen-js-vue3.png)
 
-2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
+4.2. Lea los estilos de la API de Vue.js en https://vuejs.org/guide/introduction.html#api-styles y responda ¿Con cuál de los estilos se siente familiarizado?
 Luego, agregue cada uno de los ejemplos oficiales en https://vuejs.org/examples/ a su CodePen.
 Utilice el estandar **vue.js-01, vue.js-02, etc.**
 
@@ -608,10 +640,10 @@ Utilice el estandar **vue.js-01, vue.js-02, etc.**
 
 ![vue.js-example-style-options-composition](/images/vue.js-example-style-options-composition.png)
 
-3. Explique tres directivas (de las que no se explicarón en este sitio) y contruya ejemplos para poder comprobarlos funcionalmente.
+4.3. Explique tres directivas (de las que no se explicarón en este sitio) y contruya ejemplos para poder comprobarlos funcionalmente.
 
 
-## Referencias
+## 5. Referencias
 - [Inicio rápido](https://vuejs.org/guide/quick-start.html)
 - [Introducción](https://vuejs.org/guide/introduction)
 - [Ejemplos](https://vuejs.org/examples)
